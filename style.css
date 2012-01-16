@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+html {
+	margin: 20px 30px;
+}
+
+body {
+	background: #111;
+	color: #eee;
+	font-family: 'Ubuntu Condensed', consolas, monospace;
+	line-height: 20px;
+	letter-spacing: .075em;
+}
+
+h1 {
+	font-size: 60px; 
+	line-height: 60px;
+	display: inline-block;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1,p,table { margin: 0 0 20px; }
+h1,input,textarea,*[contenteditable] { letter-spacing: 0; }
+
+/* --- contenteditables & form stuff --- */
+
+*[contenteditable] { cursor: text; }
+*:active, *:focus { outline: none; }
+
+.contenteditable {
+	background: #222;
+	padding: 5px 10px;
+	position: relative;
+	margin: 0 0 10px;
+	font-family: 'Ubuntu Mono', consolas, monospace;
+	white-space: pre;
+	max-width: 900px;
+	max-height: 600px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#function { display: none; }
+
+/*
+.consoled { padding-left: 25px; }
+.consoled:before {
+	content: "> ";
+	color: #666;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+*/
+
+#output {
+	background: #ccc;
+	color: #000;
+}
+
+select {
+	margin: 0 5px 10px 0;
+	display: inline-block;
+	font-size: 16px;
+}
+
+/* --- tables --- */
+
+table { width: 100%; }
+td,th { vertical-align: top; }
+
+th {
+	text-align: left;
+	width: 100px;
+	padding: 0 20px 0 0;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+/* http://www.colorapi.com/#!q/supersonic%20automatic/4458528671 */
+
+h1 a { text-shadow: 2px 2px 0 #111416, 4px 4px 0 #323B49; }
+body { background: #111416; color: #BABCAA; }
+a { color: #DDAB3E; }
+.contenteditable { background: #323B49; color: #fff; }
+#output { background: #BABCAA; color: #000; }
